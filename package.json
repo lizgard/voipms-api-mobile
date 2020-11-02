@@ -1,8 +1,8 @@
 {
-  "name": "test",
+  "name": "voipms-api-mobile",
   "main": "main.js",
   "version": "1.0.0",
-  "description": "test",
+  "description": "Mobile application for VoIP.ms services",
   "author": "lizgard <edgardo.gordillo@lizgard.com>",
   "license": "MIT",
   "dependencies": {
