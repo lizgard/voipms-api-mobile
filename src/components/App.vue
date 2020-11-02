@@ -1,14 +1,14 @@
 <template>
     <Page>
         <ActionBar title="VoIP.ms API Setting"/>
-        <TabView :selectedIndex="selectedIndex" @selectedIndexChange="indexChange">
+        <TabView :selectedIndex="selectedIndex" @selectedIndexChange="indexChange" tabTextColor="black" selectedTabTextColor="#a9a9a9" >
             <TabViewItem title="Tab 1">
                 <GridLayout columns="*" rows="*">
                     <Label class="message" :text="msg" col="0" row="0"/>
                 </GridLayout>
             </TabViewItem>
 
-            <TabViewItem title="Tab 2">
+            <TabViewItem title="Settings">
                 <Label text="Content for Tab 2" />
             </TabViewItem>
         </TabView>
@@ -27,6 +27,7 @@
         indexChange (args): void {
             let newIndex = args.value;
             console.log('Current tab index: ' + newIndex);
+            alert('Current tab index: ' + newIndex);
         }
     }
   }
@@ -34,7 +35,7 @@
 
 <style scoped>
     ActionBar {
-        background-color: #53ba82;
+        background-color: #C3C3C3;
         color: #ffffff;
     }
 
